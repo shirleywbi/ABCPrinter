@@ -1,7 +1,10 @@
+import content.ABC;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class ABCPrinter extends JFrame {
+    private static ABC abc = new ABC();
 
     public ABCPrinter() {
         setTitle("Alphabet Printer");
@@ -12,7 +15,7 @@ public class ABCPrinter extends JFrame {
     public static void main(String[] args) {
         ABCPrinter abcPrinter = new ABCPrinter();
         abcPrinter.setLayout(new FlowLayout());
-        ABCUI panel = new ABCUI();
+        PrinterUI panel = new PrinterUI(abc);
         abcPrinter.add(panel);
         abcPrinter.setVisible(true);
     }
