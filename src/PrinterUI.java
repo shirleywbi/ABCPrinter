@@ -20,12 +20,20 @@ public class PrinterUI extends JPanel implements KeyListener {
 
     @Override
     public void keyTyped(KeyEvent e) {
+
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_SPACE)
+        if (e.getKeyCode() == KeyEvent.VK_SPACE) {
             wordDisplay.setText(content.getNew());
+        }
+        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+            wordDisplay.setText(content.getPrev());
+        }
+        if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            wordDisplay.setText(content.getNext());
+        }
     }
 
     @Override
