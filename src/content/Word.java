@@ -13,7 +13,7 @@ import java.util.Random;
 public class Word implements Content{
     private ArrayList<String> words = new ArrayList<>();
     private ArrayList<String> wordsShown = new ArrayList<>();
-    private int current = -1;  //tracks current position of character
+    private int current = 0;  //tracks current position of character
 
     public Word() {
         try {

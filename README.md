@@ -8,3 +8,6 @@ http://www.readingrockets.org/article/basic-spelling-vocabulary-list
 How to use:
 - Left Arrow: Previous Display (Back)
 - Right Arrow: Next Display (Forward)
+
+To implement:
+- Iterator

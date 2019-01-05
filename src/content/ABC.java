@@ -6,7 +6,7 @@ import java.util.Random;
 //TODO: Convert to iterator
 public class ABC implements Content{
     private ArrayList<String> charShown = new ArrayList<>();
-    private int current = -1;  //tracks current position of character
+    private int current = 0;  //tracks current position of character
 
     //EFFECTS: returns new character and adds to list of characters shown so far
     @Override

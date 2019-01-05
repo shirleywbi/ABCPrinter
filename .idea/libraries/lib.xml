@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/lib" />
+      <root url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/bin" />
+      <root url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/mbrola" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/bin" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/mbrola" recursive="false" />
+  </library>
+</component>

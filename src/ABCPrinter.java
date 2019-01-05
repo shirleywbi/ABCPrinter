@@ -18,6 +18,7 @@ public class ABCPrinter extends JFrame {
         PrinterUI panel = new PrinterUI(abc);
         abcPrinter.add(panel);
         abcPrinter.setVisible(true);
+        System.out.println();
     }
 
 }

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mbrola">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/mbrola" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/freetts-1.2.2-bin/freetts-1.2/mbrola" recursive="false" />
+  </library>
+</component>
