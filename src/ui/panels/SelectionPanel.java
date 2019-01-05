@@ -1,6 +1,7 @@
 package ui.panels;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
@@ -18,24 +19,26 @@ public class SelectionPanel extends JPanel implements ItemListener {
     public SelectionPanel() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         fileOptionABC.setSelected(true); //default selection
-        add(fileOptionABC);
-        add(fileOptionDigraph);
-        add(fileOption0);
-        add(fileOption1);
-        add(fileOption2);
-        add(fileOption3);
-        add(fileOption4);
-        add(fileOption5);
+        fileOptionSetup(fileOptionABC);
+        fileOptionSetup(fileOptionDigraph);
 
-        fileOptionABC.addItemListener(this);
-        fileOptionDigraph.addItemListener(this);
-        fileOption0.addItemListener(this);
-        fileOption1.addItemListener(this);
-        fileOption2.addItemListener(this);
-        fileOption3.addItemListener(this);
-        fileOption4.addItemListener(this);
-        fileOption5.addItemListener(this);
+        fileOptionSetup(fileOption0);
+        fileOptionSetup(fileOption1);
+        fileOptionSetup(fileOption2);
+        fileOptionSetup(fileOption3);
+        fileOptionSetup(fileOption4);
+        fileOptionSetup(fileOption5);
     }
+
+    //MODIFIES: this
+    //EFFECTS: sets up checkboxes and adds it to selection panel
+    private void fileOptionSetup(JCheckBox checkBox) {
+        checkBox.setFont(new Font(null,Font.PLAIN,12));
+        checkBox.setFocusable(false);
+        checkBox.addItemListener(this);
+        add(checkBox);
+    }
+
 
     //EFFECTS: use selected files as database for random word generation
     @Override

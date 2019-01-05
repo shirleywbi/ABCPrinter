@@ -1,4 +1,4 @@
-package content;
+package model;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -33,7 +33,7 @@ public class Word {
 
     public String getNew() {
         Random r = new Random();
-        int n = r.nextInt(words.size()) + 1;
+        int n = r.nextInt(words.size());
         String s = words.get(n);
         wordsShown.add(s);
         current++;

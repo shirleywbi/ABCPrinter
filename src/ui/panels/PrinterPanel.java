@@ -1,6 +1,6 @@
 package ui.panels;
 
-import content.Word;
+import model.Word;
 
 import javax.swing.*;
 import java.awt.*;
