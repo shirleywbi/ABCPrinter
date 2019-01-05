@@ -1,13 +1,16 @@
-ALPHABET PRINTER\
-Displays a random letter of the alphabet when space is pressed.
+**WORD PRINTER**\
+Displays a random line from given text file when space is pressed. 
 
-WORD PRINTER\
-Displays a random word from given file when space is pressed. Given file contains Grade 1 words from: 
-http://www.readingrockets.org/article/basic-spelling-vocabulary-list
+Files provided contain:
+- The alphabet - upper and lower case
+- Digraphs - special sounds in English
+- 100 words for conversation
+- Words for grades 1-5 from http://www.readingrockets.org/article/basic-spelling-vocabulary-list
 
 How to use:
+- Space: Displays new word/character
 - Left Arrow: Previous Display (Back)
 - Right Arrow: Next Display (Forward)
 
-To implement:
+To implement (work-in-progress):
 - Iterator
