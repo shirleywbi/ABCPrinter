@@ -18,10 +18,10 @@ public class Printer extends JFrame {
 
     public static void main(String[] args) {
         Printer printer = new Printer();
-        printer.setLayout(new FlowLayout());
+        printer.setLayout(new BorderLayout());
         PrinterPanel panel = new PrinterPanel(word);
         SelectionPanel selectionPanel = new SelectionPanel();
-        printer.add(selectionPanel); //TODO: Issue with spacebar activating checkbox instead of going next
+        printer.add(selectionPanel, BorderLayout.PAGE_START);
         printer.add(panel);
         printer.setVisible(true);
     }

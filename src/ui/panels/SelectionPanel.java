@@ -1,5 +1,7 @@
 package ui.panels;
 
+import model.Word;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
@@ -7,6 +9,7 @@ import java.awt.event.ItemListener;
 
 //Panel to select which sets of words to be used
 public class SelectionPanel extends JPanel implements ItemListener {
+    private Word word = new Word();
     private JCheckBox fileOptionABC = new JCheckBox("ABC");
     private JCheckBox fileOptionDigraph = new JCheckBox("Digraph");
     private JCheckBox fileOption0 = new JCheckBox("100 Basic");

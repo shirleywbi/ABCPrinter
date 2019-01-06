@@ -15,4 +15,3 @@ How to use:
 To implement (work-in-progress):
 - Iterator
 - Tests
-- Layout needs to be fixed: not centered vertically and selection panel should stay upper left.
