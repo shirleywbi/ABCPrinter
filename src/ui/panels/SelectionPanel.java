@@ -9,7 +9,7 @@ import java.awt.event.ItemListener;
 
 //Panel to select which sets of words to be used
 public class SelectionPanel extends JPanel implements ItemListener {
-    private Word word = new Word();
+    private Word word = Word.getInstance();
     private JCheckBox fileOptionABC = new JCheckBox("ABC");
     private JCheckBox fileOptionDigraph = new JCheckBox("Digraph");
     private JCheckBox fileOption0 = new JCheckBox("100 Basic");
@@ -48,28 +48,45 @@ public class SelectionPanel extends JPanel implements ItemListener {
     public void itemStateChanged(ItemEvent e) {
         Object source = e.getItemSelectable();
         if (source == fileOptionABC) {
-
+            word.setABCSelected(true);
+        } else {
+            word.setABCSelected(false);
         }
         if (source == fileOptionDigraph) {
-
+            word.setDigraphSelected(true);
+        } else {
+            word.setDigraphSelected(false);
         }
         if (source == fileOption0) {
-
+            word.setBasic100WordsSelected(true);
+        } else {
+            word.setBasic100WordsSelected(false);
         }
         if (source == fileOption1) {
-
+            word.setLevel1Selected(true);
+        } else {
+            word.setLevel1Selected(false);
         }
         if (source == fileOption2) {
-
+            word.setLevel2Selected(true);
+        } else {
+            word.setLevel2Selected(false);
         }
         if (source == fileOption3) {
-
+            word.setLevel3Selected(true);
+        } else {
+            word.setLevel3Selected(false);
         }
         if (source == fileOption4) {
-
+            word.setLevel4Selected(true);
+        } else {
+            word.setLevel4Selected(false);
         }
         if (source == fileOption5) {
-
+            word.setLevel5Selected(true);
+        } else {
+            word.setLevel5Selected(false);
         }
+
     }
 }

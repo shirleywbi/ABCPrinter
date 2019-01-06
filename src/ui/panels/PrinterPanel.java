@@ -6,9 +6,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.Observable;
+import java.util.Observer;
 
 //User interface for displaying words/characters
-public class PrinterPanel extends JPanel implements KeyListener {
+public class PrinterPanel extends JPanel implements KeyListener, Observer {
     private JLabel wordDisplay = new JLabel();
     private Word word;
 
@@ -47,5 +49,11 @@ public class PrinterPanel extends JPanel implements KeyListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
+    }
+
+
+    @Override
+    public void update(Observable o, Object arg) {
+
     }
 }

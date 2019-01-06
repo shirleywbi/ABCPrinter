@@ -8,7 +8,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Printer extends JFrame {
-    private static Word word = new Word();
 
     public Printer() {
         setTitle("Randomized Word Printer");
@@ -17,9 +16,11 @@ public class Printer extends JFrame {
     }
 
     public static void main(String[] args) {
+        Word word = Word.getInstance();
         Printer printer = new Printer();
         printer.setLayout(new BorderLayout());
         PrinterPanel panel = new PrinterPanel(word);
+        word.addObserver(panel);
         SelectionPanel selectionPanel = new SelectionPanel();
         printer.add(selectionPanel, BorderLayout.PAGE_START);
         printer.add(panel);

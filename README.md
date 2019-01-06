@@ -13,5 +13,8 @@ How to use:
 - Right Arrow: Next Display (Forward)
 
 To implement (work-in-progress):
+- Bug: Selection is not working completely, whenever clicked, it will only show the last selected set
+- Selection panel
+- Timer
 - Iterator
 - Tests
