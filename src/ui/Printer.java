@@ -20,7 +20,6 @@ public class Printer extends JFrame {
         Printer printer = new Printer();
         printer.setLayout(new BorderLayout());
         PrinterPanel panel = new PrinterPanel(word);
-        word.addObserver(panel);
         SelectionPanel selectionPanel = new SelectionPanel();
         printer.add(selectionPanel, BorderLayout.PAGE_START);
         printer.add(panel);

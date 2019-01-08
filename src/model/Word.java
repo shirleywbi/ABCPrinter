@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
-public class Word extends Observable {
+public class Word {
     private int current = -1;  //tracks current position of character
     private boolean ABCSelected = true;
     private boolean digraphSelected = false;
@@ -142,42 +142,26 @@ public class Word extends Observable {
     //setters
     public void setABCSelected(boolean ABCSelected) {
         this.ABCSelected = ABCSelected;
-        notifyObservers();
-        setChanged();
     }
     public void setDigraphSelected(boolean digraphSelected) {
         this.digraphSelected = digraphSelected;
-        notifyObservers();
-        setChanged();
     }
     public void setBasic100WordsSelected(boolean basic100WordsSelected) {
         this.basic100WordsSelected = basic100WordsSelected;
-        notifyObservers();
-        setChanged();
     }
     public void setLevel1Selected(boolean level1Selected) {
         this.level1Selected = level1Selected;
-        notifyObservers();
-        setChanged();
     }
     public void setLevel2Selected(boolean level2Selected) {
         this.level2Selected = level2Selected;
-        notifyObservers();
-        setChanged();
     }
     public void setLevel3Selected(boolean level3Selected) {
         this.level3Selected = level3Selected;
-        notifyObservers();
-        setChanged();
     }
     public void setLevel4Selected(boolean level4Selected) {
         this.level4Selected = level4Selected;
-        notifyObservers();
-        setChanged();
     }
     public void setLevel5Selected(boolean level5Selected) {
         this.level5Selected = level5Selected;
-        notifyObservers();
-        setChanged();
     }
 }

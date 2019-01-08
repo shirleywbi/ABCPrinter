@@ -24,7 +24,6 @@ public class SelectionPanel extends JPanel implements ItemListener {
         fileOptionABC.setSelected(true); //default selection
         fileOptionSetup(fileOptionABC);
         fileOptionSetup(fileOptionDigraph);
-
         fileOptionSetup(fileOption0);
         fileOptionSetup(fileOption1);
         fileOptionSetup(fileOption2);
@@ -36,7 +35,7 @@ public class SelectionPanel extends JPanel implements ItemListener {
     //MODIFIES: this
     //EFFECTS: sets up checkboxes and adds it to selection panel
     private void fileOptionSetup(JCheckBox checkBox) {
-        checkBox.setFont(new Font(null,Font.PLAIN,12));
+        checkBox.setFont(new Font(null, Font.PLAIN, 12));
         checkBox.setFocusable(false);
         checkBox.addItemListener(this);
         add(checkBox);
@@ -46,47 +45,62 @@ public class SelectionPanel extends JPanel implements ItemListener {
     //EFFECTS: use selected files as database for random word generation
     @Override
     public void itemStateChanged(ItemEvent e) {
-        Object source = e.getItemSelectable();
+        Object source = e.getSource();
         if (source == fileOptionABC) {
-            word.setABCSelected(true);
-        } else {
-            word.setABCSelected(false);
+            if (fileOptionABC.isSelected()) {
+                word.setABCSelected(true);
+            } else {
+                word.setABCSelected(false);
+            }
         }
         if (source == fileOptionDigraph) {
-            word.setDigraphSelected(true);
-        } else {
-            word.setDigraphSelected(false);
+            if (fileOptionDigraph.isSelected()) {
+                word.setDigraphSelected(true);
+            } else {
+                word.setDigraphSelected(false);
+            }
         }
         if (source == fileOption0) {
-            word.setBasic100WordsSelected(true);
-        } else {
-            word.setBasic100WordsSelected(false);
+            if (fileOption0.isSelected()) {
+                word.setBasic100WordsSelected(true);
+            } else {
+                word.setBasic100WordsSelected(false);
+            }
         }
         if (source == fileOption1) {
-            word.setLevel1Selected(true);
-        } else {
-            word.setLevel1Selected(false);
+            if (fileOption1.isSelected()) {
+                word.setLevel1Selected(true);
+            } else {
+                word.setLevel1Selected(false);
+            }
         }
         if (source == fileOption2) {
-            word.setLevel2Selected(true);
-        } else {
-            word.setLevel2Selected(false);
+            if (fileOption2.isSelected()) {
+                word.setLevel2Selected(true);
+            } else {
+                word.setLevel2Selected(false);
+            }
         }
         if (source == fileOption3) {
-            word.setLevel3Selected(true);
-        } else {
-            word.setLevel3Selected(false);
+            if (fileOption3.isSelected()) {
+                word.setLevel3Selected(true);
+            } else {
+                word.setLevel3Selected(false);
+            }
         }
         if (source == fileOption4) {
-            word.setLevel4Selected(true);
-        } else {
-            word.setLevel4Selected(false);
+            if (fileOption4.isSelected()) {
+                word.setLevel4Selected(true);
+            } else {
+                word.setLevel4Selected(false);
+            }
         }
         if (source == fileOption5) {
-            word.setLevel5Selected(true);
-        } else {
-            word.setLevel5Selected(false);
+            if (fileOption5.isSelected()) {
+                word.setLevel5Selected(true);
+            } else {
+                word.setLevel5Selected(false);
+            }
         }
-
     }
 }
