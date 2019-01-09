@@ -14,6 +14,6 @@ How to use:
 - Checkboxes: Select whichever boxes you would like the sets of words to come from
 
 To implement (work-in-progress):
-- Timer
+- Timer (current wip)
 - Iterator
 - Tests
