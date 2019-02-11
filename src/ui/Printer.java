@@ -23,7 +23,6 @@ public class Printer extends JFrame {
         PrinterPanel panel = new PrinterPanel(word);
         SelectionPanel selectionPanel = new SelectionPanel();
         TimerPanel timerPanel = new TimerPanel();
-//        timerPanel.timerStart();
         printer.add(timerPanel, BorderLayout.NORTH);
         printer.add(selectionPanel, BorderLayout.WEST);
         printer.add(panel);
